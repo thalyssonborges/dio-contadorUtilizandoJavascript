@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+
+body{
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    color: #fff;
+    background-color: rgb(34, 31, 31);
+}
+
+.container-principal{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 80vh;
+    margin: auto;
+    
+}
+.container-elementos{
+    padding: 10px 80px;
+    border: 4px solid yellow;
+    border-radius: 50px;
+    background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%); 
+}
+.texto-colorido{
+    color: yellow;
+}
+.contador{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    background-color: #fff;
+    border-radius: 50px;
+    margin: 50px auto;
+    width: 180px;
+    height: 50px;
+    
+}
+.contador #numeroContador{
+    width: 80px;
+    text-align: center;
+    color: #6a11cb;
+    font-weight: 600;
+    
+}
+.contador button{
+    width: 50px;
+    height: 50px;
+    border: 1px solid #000;
+    border-radius: 50px;
+    font-size: 20px;
+    background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+    color: #000;
+    font-weight: 800;
+}
+.contador button:hover{
+    cursor: pointer;
+}
+.texto-2{
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+@media(max-width:620px){
+    .texto-1, .texto-2{
+        font-size: 12px;
+    }
+    .container-elementos{
+        padding: 10px 25px;
+    }
+}
